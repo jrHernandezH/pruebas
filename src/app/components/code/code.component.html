@@ -1,0 +1,17 @@
+<form [formGroup]="formCode" (ngSubmit)="fetchCodeData()">
+  <label for="postalCode">Postal Code:</label>
+  <input id="postalCode" formControlName="postalCode" type="text" />
+
+  <label for="state">State:</label>
+  <input id="state" formControlName="state" type="text" readonly />
+
+  <label for="municipality">Municipality:</label>
+  <input
+    id="municipality"
+    formControlName="municipality"
+    type="text"
+    readonly
+  />
+
+  <button type="submit">Fetch Data</button>
+</form>
